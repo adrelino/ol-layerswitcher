@@ -564,6 +564,10 @@ var LayerSwitcher = function (_Control) {
                     label.className += ' disabled';
                 }
                 li.appendChild(label);
+                if(lyr.get('extraLabel')){
+                    label.appendChild(lyr.get('extraLabel'));
+                }
+
             }
             return li;
         }
